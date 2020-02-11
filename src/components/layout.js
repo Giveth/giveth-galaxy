@@ -98,7 +98,7 @@ const Layout = ({ children }) => (
             },
             {
               property: 'og:image',
-              content: '/giveth-og.png',
+              content: 'https://giveth.io/giveth-og.png',
             },
             {
               property: 'og:image:url',
