@@ -98,11 +98,11 @@ const Layout = ({ children }) => (
             },
             {
               property: 'og:image',
-              content: 'https://giveth.io/giveth-og.png',
+              content: 'https://giveth.io/givethio.png',
             },
             {
               property: 'og:image:url',
-              content: 'https://giveth.io/giveth-og.png',
+              content: 'https://giveth.io/givethio.png',
             },
             {
               property: 'twitter:card',
