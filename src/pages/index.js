@@ -190,7 +190,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <Hero>
       <HeroImage
-        fluid={data.backgroundImage.childImageSharp.fluid}
+        fixed={data.backgroundImage.childImageSharp.fixed}
         style={{
           position: 'absolute',
           left: '0px',
@@ -447,22 +447,8 @@ export const query = graphql`
     }
     backgroundImage: file(relativePath: { eq: "dreamcatcher.png" }) {
       childImageSharp {
-        fluid(maxWidth: 1920, quality: 75) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    imageKeyboard: file(relativePath: { eq: "keyboard.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920, quality: 75) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    imageEthereum: file(relativePath: { eq: "ethereum.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920, quality: 75) {
-          ...GatsbyImageSharpFluid
+        fixed(width: 1200) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
