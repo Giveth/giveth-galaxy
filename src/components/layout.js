@@ -78,11 +78,11 @@ const Layout = ({ children }) => (
             },
             {
               property: 'og:image:width',
-              content: '500',
+              content: '1200',
             },
             {
               property: 'og:image:height',
-              content: '500',
+              content: '628',
             },
             {
               property: 'og:url',
@@ -98,11 +98,31 @@ const Layout = ({ children }) => (
             },
             {
               property: 'og:image',
-              content: 'https://i.imgur.com/TiTbadA.png',
+              content: '/giveth-og.png',
             },
             {
               property: 'og:image:url',
-              content: 'https://i.imgur.com/TiTbadA.png',
+              content: 'https://giveth.io/giveth-og.png',
+            },
+            {
+              property: 'twitter:card',
+              content: 'summary_large_image',
+            },
+            {
+              property: 'twitter:url',
+              content: 'https://giveth.io',
+            },
+            {
+              property: 'twitter:title',
+              content: data.site.siteMetadata.title,
+            },
+            {
+              property: 'twitter:description',
+              content: data.site.siteMetadata.description,
+            },
+            {
+              property: 'twitter:image',
+              content: 'https://giveth.io/giveth-og.png',
             },
           ]}
         />
