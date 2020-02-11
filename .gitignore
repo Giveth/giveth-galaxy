@@ -20,3 +20,6 @@ npm-debug.log
 bit.json
 .bitmap
 /dist
+
+#dolphin
+.directory
