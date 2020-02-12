@@ -122,7 +122,7 @@ const Layout = ({ children }) => (
             },
             {
               property: 'twitter:image',
-              content: 'https://giveth.io/giveth-og.png',
+              content: 'https://giveth.io/giveth-og.png?0001',
             },
           ]}
         />
