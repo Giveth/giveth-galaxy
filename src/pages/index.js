@@ -138,7 +138,7 @@ const Block = styled.div`
   display: block;
   text-align: center;
 
-  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
   :hover {
     transform: skew(0deg, -10deg);
   }
@@ -198,69 +198,69 @@ const IndexPage = ({ data }) => (
           width: '50%',
           height: '100%',
           zIndex: '-2',
-          transform: 'scale(0.6)',
+          transform: 'scale(0.6)'
         }}
         className={'heroImage'}
       />
       <HeroGroup>
         <img
           src={require('../images/logo/givethio-purple.svg')}
-          alt="giveth.io"
-          className="hero-item-1"
+          alt='giveth.io'
+          className='hero-item-1'
         />
-        <p className="hero-item-2">A Community of Makers</p>
-        <h1 className="hero-item-3">Building the Future of Giving</h1>
-        <Link to="/join" className="hero-item-4">
+        <p className='hero-item-2'>A Community of Makers</p>
+        <h1 className='hero-item-3'>Building the Future of Giving</h1>
+        <Link to='/join' className='hero-item-4'>
           <Button primary>Join our chat</Button>
         </Link>
       </HeroGroup>
     </Hero>
 
-    <Container id="heronav">
+    <Container id='heronav'>
       <ContentTextblock headerdata={data.contentB.edges[1]} />
     </Container>
 
     <HeroNav>
       <Block>
-        <Link to="/#dapp">
+        <Link to='/#dapp'>
           <img
-            width="80px"
-            height="80px"
+            width='80px'
+            height='80px'
             src={require('../images/logo/giveth-nav-logo.svg')}
-            alt=""
+            alt=''
           />
           <p>Giveth Dapp</p>
         </Link>
       </Block>
       <Block>
-        <Link to="/#commonsstack">
+        <Link to='/#commonsstack'>
           <img
-            width="80px"
-            height="80px"
+            width='80px'
+            height='80px'
             src={require('../images/icons/commonsstack.svg')}
-            alt=""
+            alt=''
           />
           <p>The Commons Stack</p>
         </Link>
       </Block>
       <Block>
-        <Link to="/#org">
+        <Link to='/#org'>
           <img
-            width="80px"
-            height="80px"
+            width='80px'
+            height='80px'
             src={require('../images/icons/distributed-org.svg')}
-            alt=""
+            alt=''
           />
           <p>Governance</p>
         </Link>
       </Block>
       <Block>
-        <Link to="/#galaxy">
+        <Link to='/#galaxy'>
           <img
-            width="80px"
-            height="80px"
+            width='80px'
+            height='80px'
             src={require('../images/icons/cooperative-dev.svg')}
-            alt=""
+            alt=''
           />
           <p>Galaxy Projects</p>
         </Link>
@@ -269,31 +269,31 @@ const IndexPage = ({ data }) => (
 
     <Divider2 />
 
-    <ContainerXL id="dapp">
+    <ContainerXL id='dapp'>
       <ContentDApp data={data.contentDapps.edges[0]} />
     </ContainerXL>
 
     <Divider2 />
 
-    <ContainerXL id="commonsstack">
+    <ContainerXL id='commonsstack'>
       <ContentDAppCS data={data.contentDapps.edges[1]} />
     </ContainerXL>
 
     <Divider />
 
-    <Container id="org">
+    <Container id='org'>
       <ContentA2 data={data.contentA.edges[3]} />
     </Container>
 
     <Divider />
 
-    <Container id="socialcoding">
+    <Container id='socialcoding'>
       <ContentASocialCoding data={data.contentA.edges[2]} />
     </Container>
 
     <Divider />
 
-    <Container id="galaxy">
+    <Container id='galaxy'>
       <ContentB
         headerdata={data.contentB.edges[0]}
         planetsdata={data.contentBcards.edges}
@@ -303,7 +303,7 @@ const IndexPage = ({ data }) => (
 
     <Divider />
 
-    <Purple id="dac">
+    <Purple id='dac'>
       <ContentA data={data.contentA.edges[1]} />
       <Friendlogos data={data.friends.edges} />
     </Purple>
@@ -472,6 +472,7 @@ export const query = graphql`
         node {
           id
           link
+          name
           description
           logo {
             file {

@@ -139,11 +139,15 @@ const Friendlogos = ({ data }) => (
             <ContentItem key={edges.node.id}>
               <ProjectLink
                 href={edges.node.link}
-                target="_blank"
-                rel="noopener noreferrer"
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <Logo src={edges.node.logo.file.url} />
-                <Tooltip className="tooltip">{edges.node.description}</Tooltip>
+                <Tooltip className='tooltip'>
+                  {edges.node.name}
+                  {' - '}
+                  {edges.node.description}
+                </Tooltip>
               </ProjectLink>
             </ContentItem>
           ))}
